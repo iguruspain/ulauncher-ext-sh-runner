@@ -30,6 +30,52 @@
         {"text": "Gnome (gnome-terminal)", "value": "gnome-terminal"},
         {"text": "Xfce (xfce4-terminal)", "value": "xfce4-terminal"},
         {"text": "KDE Terminal (konsole)", "value": "konsole"},
+        {"text": "Terminator (terminator)", "value": "terminator"},
+        {"text": "Ghostty (ghostty)", "value": "ghostty"},
+        {"text": "Kitty (kitty)", "value": "kitty"}
+      ]
+    },
+    {
+      "id": "python_command",
+      "type": "input",
+      "name": "Python Command",
+      "description": "Command used to run python scripts",
+      "default_value": "python3"
+    }
+  ]
+}
+{
+  "required_api_version": "^2.0.0",
+  "name": "Personal Script Runner",
+  "description": "Execute collection of shell scripts from a directory",
+  "developer_name": "Ansori, M.",
+  "icon": "images/icon.png",
+  "main_path": "main.py",
+  "preferences": [
+    {
+      "id": "sh_kw",
+      "type": "keyword",
+      "name": "SH Runner",
+      "default_value": "sh",
+      "description": "Keyword to trigger script search (e.g., sh)"
+    },
+    {
+      "id": "scripts_dir",
+      "type": "text",
+      "name": "Scripts Directory",
+      "default_value": "$HOME/script, ~/scriptv2, !$HOME/scriptv3",
+      "description": "The directory where your .sh collection is stored. Separate with commas. Use '!' prefix to disable a path."
+    },
+    {
+      "id": "terminal_emulator",
+      "type": "select",
+      "name": "Terminal Emulator",
+      "description": "Select your terminal emulator",
+      "default_value": "gnome-terminal",
+      "options": [
+        {"text": "Gnome (gnome-terminal)", "value": "gnome-terminal"},
+        {"text": "Xfce (xfce4-terminal)", "value": "xfce4-terminal"},
+        {"text": "KDE Terminal (konsole)", "value": "konsole"},
         {"text": "Terminator (terminator)", "value": "terminator"}
       ]
     },
